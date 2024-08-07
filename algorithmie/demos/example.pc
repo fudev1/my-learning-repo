@@ -1,0 +1,6 @@
+Algorithme Example
+    Variable maVar : Entier
+DEBUT
+
+
+FIN

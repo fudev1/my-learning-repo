@@ -1,0 +1,30 @@
+Algorithme DemoVariable
+    Variable nom : Chaine
+    Variable age : Entier
+    Variable taille : Reel
+    Variable estMarie : Booleen
+    Constante TAUX_TVA = 0.21
+DEBUT
+
+    nom <- "Alexandre" // 1er affectation = initialisation
+    nom <- "Luc" // 2e affectation -> on perd la première valeur
+    // nom <- 45 // le type de valeur ne correspond pas au type de variable
+
+    nom <- nom + " Dubois"
+
+    // TAUX_TVA <- 0.22 // impossible d'affecter une constante
+
+    Ecrire(nom) // Luc Dubois
+    // Ecrire(age) // impossible je ne peux pas utiliser de variable non init.
+
+    Ecrire("Veuillez entrer votre age: ")
+    Lire( age ) // on demande à l'utilisateur de remplir la variable age
+
+    Ecrire(age)
+    
+FIN
+
+// camelCase : variable
+// UpperCamelCase : algorithme
+// snake_case : variable
+// UPPER_SNAKE_CASE : constante
