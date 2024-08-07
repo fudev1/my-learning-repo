@@ -1,0 +1,8 @@
+Algorithme Bienvenue
+    Variable message : Chaine
+DEBUT
+
+    message <- "Bienvenue"
+    Ecrire(message)
+    
+FIN
