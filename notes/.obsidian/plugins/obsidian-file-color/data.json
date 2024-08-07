@@ -1,0 +1,43 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "SjligPg0JgR6RQBBEarTn",
+      "name": "yellow",
+      "value": "#e6de00"
+    },
+    {
+      "id": "ooxJLBPs-CSrjhBpz0KtB",
+      "name": "red",
+      "value": "#b20101"
+    },
+    {
+      "id": "3qWRvZWq8K4JEqB3-CSES",
+      "name": "core",
+      "value": "#404040"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Django",
+      "color": "SjligPg0JgR6RQBBEarTn"
+    },
+    {
+      "path": "Typescript",
+      "color": "SjligPg0JgR6RQBBEarTn"
+    },
+    {
+      "path": "ReactJS",
+      "color": "SjligPg0JgR6RQBBEarTn"
+    },
+    {
+      "path": "FullStack Python",
+      "color": "ooxJLBPs-CSrjhBpz0KtB"
+    },
+    {
+      "path": "Sources",
+      "color": "3qWRvZWq8K4JEqB3-CSES"
+    }
+  ]
+}
