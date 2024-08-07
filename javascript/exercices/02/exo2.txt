@@ -1,0 +1,12 @@
+Gestion d'une todo liste :
+Liste de tâches : 
+
+id
+description
+nom
+statut
+1 - Ajouter une nouvelle tâche à la liste
+
+2 - Faire en sorte de pouvoir modifier le statut d'une tâche
+
+3 - Filtrer les tâches pour afficher uniquement celles terminées

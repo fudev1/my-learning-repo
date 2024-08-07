@@ -1,0 +1,16 @@
+1) Créez un tableau d'objects, chaque object représentera 
+une question avec ses réponses possibles ET sa bonne réponse
+
+2) Écrivez une fonction pour afficher une question et ses choix de réponses
+
+3) Écrivez une fonction pour vérifier si la réponse de l'utilisateur est correcte
+
+4) Créez une boucle principale qui parcourt toutes les questions
+
+5) Gardez un " score " que l'on affichera en fin de quizz 
+// --> Si réponse correcte + 1 
+// --> Si réponse incorrecte + 0
+
+BONUS : 
+    a) Mélangez l'ordre des questions
+    b) Limiter le temps de réponse (--> MDN setInterval())

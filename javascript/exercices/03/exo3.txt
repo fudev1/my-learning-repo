@@ -1,0 +1,16 @@
+Panier de course
+Liste d'articles :
+
+id
+nom
+prix
+quantité
+1 - Ajouter un nouvel article à la liste
+
+2 - Permettre la modification de la quantité d'un article
+
+3 - Appliquer une réduction de 10% sur article a plus de 25€
+
+4 - Calculer le total du panier après remise
+
+Modifié le: mercredi 7 août 2024, 11:05
