@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{ message }}
+
+    {{! Ceci est un commentaire }}
+    {{! La section '#movies' ne sera pas affichée si }}
+    {{! movies = false, movies = undefined, movies = [] }}
+
+    <!-- liste des films version 1 -->
+    {{ #movies }}
+    <ul>
+        <li>{{ title }}</li>
+    </ul>    
+    {{ /movies }}
+
+   <!-- liste des films version 2 -->
+   <ul>
+    {{ #movies }}
+        {{#listElement}}
+            {{title}}
+        {{/listElement}}
+    {{ /movies }}
+    </ul>
+
+    
+
+</body>
+</html>
