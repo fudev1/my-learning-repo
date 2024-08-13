@@ -1,4 +1,3 @@
-- initialisation tsconfig                                               => `tsc --init`
 - initialisation du package                                             => `pnpm init -y`
 - installation de TS en local                                           => `pnpm install typescript`
 - Activer le dossier outdir dans le fichier `tsconfig.json`             => `"outDir": "./distant"`
