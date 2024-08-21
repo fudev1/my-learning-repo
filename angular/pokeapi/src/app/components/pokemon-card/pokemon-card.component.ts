@@ -22,7 +22,17 @@ export class PokemonCardComponent {
   // @Input() attackDescription: string = "This attack does 10 damage to 1 of the opponent's Pokémon. This Pokémon does not apply Weakness and Resistance."
   // @Input() weakness: string = "https://tinyurl.com/25sjakvj";
   // @Input() resistance: string = "https://tinyurl.com/25sjakvj";
-  @Input() pokemon: Pokemon = new Pokemon();
+
+  // @Input() pokemon: Pokemon = new Pokemon();
+
+  @Input({
+    //required: true // Ne pas laisser le composant sans données
+    alias: 'my-pokemon', // Possible de changer l'alias de variable [pokemon]="" par [my-pokemon]=""
+    transform: (value: Pokemon) => { 
+      value.hp = value.hp * 2; // On multiplie le hp par 2 pour afficher le bon hp
+      return value 
+    }
+  }) pokemon: Pokemon = new Pokemon();
 
 }
 
