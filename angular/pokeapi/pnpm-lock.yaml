@@ -32,11 +32,14 @@ importers:
       '@angular/router':
         specifier: ^18.2.0
         version: 18.2.0(@angular/common@18.2.0(@angular/core@18.2.0(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.0(rxjs@7.8.1)(zone.js@0.14.10))(@angular/platform-browser@18.2.0(@angular/animations@18.2.0(@angular/core@18.2.0(rxjs@7.8.1)(zone.js@0.14.10)))(@angular/common@18.2.0(@angular/core@18.2.0(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.0(rxjs@7.8.1)(zone.js@0.14.10)))(rxjs@7.8.1)
+      daisyui:
+        specifier: ^4.12.10
+        version: 4.12.10(postcss@8.4.41)
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
       tslib:
-        specifier: ^2.6.3
+        specifier: ^2.3.0
         version: 2.6.3
       zone.js:
         specifier: ~0.14.10
@@ -57,9 +60,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.41)
-      daisyui:
-        specifier: ^4.12.10
-        version: 4.12.10(postcss@8.4.41)
       jasmine-core:
         specifier: ~5.2.0
         version: 5.2.0

@@ -1,0 +1,71 @@
+<p>pokemon-card works!</p>
+
+<div class="bg-blue-600 shadow-xl card card-compact w-96">
+    
+    <div class="card-body">
+        <header class="flex items-center justify-between card-header">
+            <div class="left">
+                <div id="name">{{name}}</div>
+            </div>
+            <div class="flex items-center ">
+                <div id="hp" class="mr-2">{{hp}} HP</div>
+                <img class="energy icon" src="#" alt="type">
+            </div>   
+        </header>
+
+        <figure>
+            <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes" />
+        </figure>
+
+        <div class="flex items-center justify-between text-center info-caption bg-slate-500">
+            <p>N° <span>{{id}}</span></p>
+            <p>Poids: <span>{{weight}} kg</span></p>
+            <p>Taille: <span>{{height}} cm</span></p>
+        </div>
+        
+        <div class="capacities">
+            <div class="flex items-center justify-between mb-1 capacity bg-fuchsia-500 ">
+                <div class="info-capacity">
+                    <p>{{attackName}}</p>
+                    <span>{{attackDescription}}</span>
+                </div>
+                <div class="damage-capacity">10+</div>
+            </div>
+
+            <div class="flex items-center justify-between mb-1 capacity bg-fuchsia-500 ">
+                <div class="info-capacity">
+                    <p>Nom de la capacité 1</p>
+                    <span>texte de la capacité 1</span>
+                </div>
+                <div class="damage-capacity">10+</div>
+            </div>
+        </div>
+
+        <div class="flex justify-between text-center attributes">
+            <div class="weakness">
+                <p>Faiblesse</p>
+                <div class="attributes-info">
+                    <span>{{weakness}}</span>
+                    <span>+3</span>
+                </div>
+            </div>
+            <div class="resistance">
+                <p>Résistance</p>
+                <div class="attributes-info">
+                    <span>{{resistance}}</span>
+                    <span>+3</span>
+                </div>
+            </div>
+            <div class="retreat">
+                <p>Retrait</p>
+                <div class=" attributes-info">
+                    <span>1</span>
+                    <span>+3</span>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+</div>
