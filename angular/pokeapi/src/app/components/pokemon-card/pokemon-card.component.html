@@ -1,36 +1,33 @@
-<p>pokemon-card works!</p>
-
-<div class="p-4 bg-yellow-500 shadow-xl card card-compact w-96">
+<div class="p-4 bg-green-500 shadow-xl card card-compact w-96">
     
-    <div class="bg-emerald-700 card-body">
+    <div class="rounded-lg bg-emerald-700 card-body">
         <header class="flex items-center justify-between card-header">
             <div class="left">
-                <div class="text-3xl font-bold text-black">{{name}}</div>
+                <div class="text-3xl font-bold text-black">{{pokemon.name}}</div>
             </div>
             <div class="flex items-center ">
-                <div class="mr-2 text-2xl font-bold text-red-500 ">{{hp}} HP</div>
-                <img class="p-1 rounded-full energy max-h-8 bg-lime-300" src="https://tinyurl.com/25sjakvj" alt="type">
+                <div class="mr-2 text-2xl font-bold text-red-500 ">{{pokemon.hp}} HP</div>
+                <img class="p-1 rounded-full max-h-8 bg-lime-300" src="{{pokemon.type}}" alt="type">
             </div>   
         </header>
-
-        <figure class="bg-white border-8 border-yellow-400 rounded-md shadow-xl shadow-emerald-900 ">
+        <figure class="bg-white border-8 rounded-md shadow-xl shadow-emerald-900 ">
             <img
                 
                 src="https://tinyurl.com/2y3773hu"
-                alt="{{name}}" />
+                alt="{{pokemon.name}}" />
         </figure>
 
         <div class="flex items-center justify-between font-bold text-center text-black bg-yellow-500 rounded-md">
-            <p>N° <span>{{id}}</span></p>
-            <p>Poids: <span>{{weight}} kg</span></p>
-            <p>Taille: <span>{{height}} cm</span></p>
+            <p>N° <span>{{pokemon.id}}</span></p>
+            <p>Poids: <span>{{pokemon.weight}} kg</span></p>
+            <p>Taille: <span>{{pokemon.height}} cm</span></p>
         </div>
         
         <div class="capacities">
             <div class="flex items-center justify-between mb-1 text-black border-b-2 border-black capacity bg-none "> 
                 <div class="mb-4">
-                    <p class="text-lg font-bold">{{attackName}}</p>
-                    <span class="text-base">{{attackDescription}}</span>
+                    <p class="text-lg font-bold">{{pokemon.attackName}}</p>
+                    <span class="text-base">{{pokemon.attackDescription}}</span>
                 </div>
                 <div class="ml-4 text-3xl font-bold damage-capacity">10+</div>
             </div>
@@ -40,24 +37,24 @@
             <div class="weakness">
                 <p class="mb-1">Faiblesse</p>
                 <div class="flex items-center justify-center attributes-info">
-                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{weakness}}" alt="type">
+                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{pokemon.weakness}}" alt="type">
                     <span>+3</span>
                 </div>
             </div>
             <div class="resistance">
                 <p class="mb-1">Résistance</p>
                 <div class="flex items-center justify-center attributes-info">
-                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{resistance}}" alt="type">
+                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{pokemon.resistance}}" alt="type">
                     <span>+3</span>
                 </div>
             </div>
             <div class="retreat">
                 <p class="mb-1">Coût de retrait</p>
                 <div class="flex items-center justify-center attributes-info">
-                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{resistance}}" alt="type">
-                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{resistance}}" alt="type">
-                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{resistance}}" alt="type">
-                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{resistance}}" alt="type">
+                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{pokemon.resistance}}" alt="type">
+                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{pokemon.resistance}}" alt="type">
+                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{pokemon.resistance}}" alt="type">
+                    <img class="p-1 mr-1 rounded-full energy max-h-8 bg-lime-300" src="{{pokemon.resistance}}" alt="type">
                 </div>
             </div>
         </div>        
