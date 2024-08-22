@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input, InputSignal } from '@angular/core';
 import { Pokemon } from '../../models/pokemon.model';
 
 @Component({
@@ -25,15 +25,24 @@ export class PokemonCardComponent {
 
   // @Input() pokemon: Pokemon = new Pokemon();
 
-  @Input({
-    //required: true // Ne pas laisser le composant sans données
-    alias: 'my-pokemon', // Possible de changer l'alias de variable [pokemon]="" par [my-pokemon]=""
-    transform: (value: Pokemon) => { 
+  // @Input({
+  //   //required: true // Ne pas laisser le composant sans données
+  //   alias: 'my-pokemon', // Possible de changer l'alias de variable [pokemon]="" par [my-pokemon]=""
+  //   transform: (value: Pokemon) => { 
+  //     value.hp = value.hp * 2; // On multiplie le hp par 2 pour afficher le bon hp
+  //     return value 
+  //   }
+  // }) pokemon: Pokemon = new Pokemon();
+  
+  // pokemon: InputSignal<Pokemon> = input.required(); // Permet de rendre obligatoire le composant 
+                                                    // (il n'a pas besoin de valeur par défaut)
+  pokemon: InputSignal<Pokemon> = input(new Pokemon(), {
+    alias: 'my-pokemon',
+    transform: (value: Pokemon) => {
       value.hp = value.hp * 2; // On multiplie le hp par 2 pour afficher le bon hp
-      return value 
+      return value
     }
-  }) pokemon: Pokemon = new Pokemon();
-
+  });
 }
 
 
