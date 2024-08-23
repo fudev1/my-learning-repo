@@ -14,5 +14,17 @@ class Courant extends compte_1.Compte {
             super.Retrait(montant);
         }
     }
+    CalculInteret() {
+        let interet;
+        if (this.Solde >= 0) {
+            interet = this._Solde * Courant._TAUXPOSTIF;
+        }
+        else {
+            interet = this._Solde * Courant._TAUXNEGATIF;
+        }
+        return interet;
+    }
 }
 exports.Courant = Courant;
+Courant._TAUXPOSTIF = 0.03;
+Courant._TAUXNEGATIF = 0.0975;

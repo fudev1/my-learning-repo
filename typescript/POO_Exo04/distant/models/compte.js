@@ -35,5 +35,8 @@ class Compte {
             this._Solde += montant;
         }
     }
+    Appliquerinteret() {
+        this._Solde += this.CalculInteret();
+    }
 }
 exports.Compte = Compte;

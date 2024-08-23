@@ -12,5 +12,9 @@ class Epargne extends compte_1.Compte {
             this._DateDernierRetrait = new Date();
         }
     }
+    CalculInteret() {
+        return this._Solde * Epargne._TAUX;
+    }
 }
 exports.Epargne = Epargne;
+Epargne._TAUX = 0.045;
