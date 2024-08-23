@@ -1,4 +1,4 @@
-import { ILivre } from "./interfaces/ILivre";
+import { ILivre } from "./interfaces/iLivres";
 import { Bibliotheque } from "./models/bibliotheque";
 import { LivreLudique } from "./models/livreLudique";
 import { LivreTechnique } from "./models/livreTechnique";
