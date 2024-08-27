@@ -1,7 +1,7 @@
 
 
 export interface IDestination {
-    id: number;
+    readonly id: number;
     readonly name: string;
     readonly description: string;
     readonly latitude: number;
