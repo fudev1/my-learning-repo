@@ -12,23 +12,23 @@ export class Client implements IClient {
     ) {}
 
     // Prop's
-    get id(): number {
+    get Id(): number {
         return this._Id;
     }
 
-    get firstname(): string {
+    get Firstname(): string {
         return this._Firstname;
     }
 
-    get lastname(): string {
+    get Lastname(): string {
         return this._Lastname;
     }
 
-    get email(): string {
+    get Email(): string {
         return this._Email;
     }
 
-    get phone(): number {
+    get Phone(): number {
         return this._Phone;
     }
 }

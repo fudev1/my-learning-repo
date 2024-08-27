@@ -1,9 +1,9 @@
 
 
 export interface IClient {
-    id: number; 
-    firstname: string;
-    lastname: string;
-    email: string;
-    phone: number;
+    Id: number; 
+    Firstname: string;
+    Lastname: string;
+    Email: string;
+    Phone: number;
 }

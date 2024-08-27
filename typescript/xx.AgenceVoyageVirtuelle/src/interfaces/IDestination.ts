@@ -6,11 +6,11 @@
 
 
 export interface IDestination {
-    readonly id: number;
-    readonly name: string;
-    readonly description: string;
-    readonly latitude: number;
-    readonly longitude: number;
-    readonly attractions: string[];
-    readonly hotels: { name: string, rating: number }[];
+    readonly Id: number;
+    readonly Name: string;
+    readonly Description: string;
+    readonly Latitude: number;
+    readonly Longitude: number;
+    readonly Attractions: string[];
+    readonly Hotels: { name: string, rating: number }[];
 }

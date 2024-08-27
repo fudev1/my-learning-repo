@@ -17,30 +17,30 @@ class Destination {
     // Prop's
     // Chaque Attribut a un Getter correspondant 
     // (permet un accès en lecture seule depuis l'extérieur de la classe)
-    get id() {
+    get Id() {
         return this._Id;
     }
-    get name() {
+    get Name() {
         return this._Nom;
     }
-    get description() {
+    get Description() {
         return this._Description;
     }
-    get latitude() {
+    get Latitude() {
         return this._Latitude;
     }
-    get longitude() {
+    get Longitude() {
         return this._Longitude;
     }
     // Copie défensive (spread)
-    get attractions() {
+    get Attractions() {
         return [...this._Attractions];
         // Tableau de chaine de caractères 
         // L'opérateur spread [...] crée une nouvelle copie superficielle du tableau
         // Suffisant car les chaines sont immuables en ts
     }
     // Copie défensive (map):
-    get hotels() {
+    get Hotels() {
         return this._Hotels.map(hotel => (Object.assign({}, hotel)));
         // Tableau d'objets (name + rating)
         // Si on copie avec un spead, on aurait les mêmes objets
@@ -49,13 +49,13 @@ class Destination {
         // Pour éviter cela on peut utiliser map
     }
     displayDetailsDestination() {
-        console.log(`\nDestination ${this.id} : ${this.name}`);
-        console.log(`Description : ${this.description}`);
-        console.log(`Coordonnées : lat = ${this.latitude}, long = ${this.longitude}`);
+        console.log(`\nDestination ${this.Id} : ${this.Name}`);
+        console.log(`Description : ${this.Description}`);
+        console.log(`Coordonnées : lat = ${this.Latitude}, long = ${this.Longitude}`);
         console.log(`Attractions:`);
-        this.attractions.forEach(attraction => console.log(`- ${attraction}`));
+        this.Attractions.forEach(Attraction => console.log(`- ${Attraction}`));
         console.log(`Hôtels :`);
-        this.hotels.forEach(hotel => console.log(`- ${hotel.name} (${hotel.rating} / 5 étoiles)`));
+        this.Hotels.forEach(Hotel => console.log(`- ${Hotel.name} (${Hotel.rating} / 5 étoiles)`));
     }
 }
 exports.Destination = Destination;

@@ -36,28 +36,28 @@ export class Destination implements IDestination {
     // Chaque Attribut a un Getter correspondant 
     // (permet un accès en lecture seule depuis l'extérieur de la classe)
 
-    get id(): number {
+    get Id(): number {
         return this._Id;
     }
 
-    get name(): string {
+    get Name(): string {
         return this._Nom;
     }
 
-    get description(): string {
+    get Description(): string {
         return this._Description;
     }
 
-    get latitude(): number {
+    get Latitude(): number {
         return this._Latitude;
     }
 
-    get longitude(): number {
+    get Longitude(): number {
         return this._Longitude;
     }
 
     // Copie défensive (spread)
-    get attractions(): string[] {
+    get Attractions(): string[] {
         return [...this._Attractions] 
         // Tableau de chaine de caractères 
         // L'opérateur spread [...] crée une nouvelle copie superficielle du tableau
@@ -65,7 +65,7 @@ export class Destination implements IDestination {
     }
 
     // Copie défensive (map):
-    get hotels(): { name: string, rating: number }[] {
+    get Hotels(): { name: string, rating: number }[] {
         return this._Hotels.map(hotel => ({...hotel}))
         // Tableau d'objets (name + rating)
         // Si on copie avec un spead, on aurait les mêmes objets
@@ -77,13 +77,13 @@ export class Destination implements IDestination {
 
 
     public displayDetailsDestination(): void {
-        console.log(`\nDestination ${this.id} : ${this.name}`);
-        console.log(`Description : ${this.description}`);
-        console.log(`Coordonnées : lat = ${this.latitude}, long = ${this.longitude}`);
+        console.log(`\nDestination ${this.Id} : ${this.Name}`);
+        console.log(`Description : ${this.Description}`);
+        console.log(`Coordonnées : lat = ${this.Latitude}, long = ${this.Longitude}`);
         console.log(`Attractions:`)
-        this.attractions.forEach(attraction => console.log(`- ${attraction}`));
+        this.Attractions.forEach(Attraction => console.log(`- ${Attraction}`));
         console.log(`Hôtels :`);
-        this.hotels.forEach(hotel => console.log(`- ${hotel.name} (${hotel.rating} / 5 étoiles)`));
+        this.Hotels.forEach(Hotel => console.log(`- ${Hotel.name} (${Hotel.rating} / 5 étoiles)`));
     }
 
 }
