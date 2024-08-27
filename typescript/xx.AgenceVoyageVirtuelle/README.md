@@ -1,7 +1,7 @@
 ## TODO : 🟩
 
 - ✅ Créer un Token d'accès à l'API
-- 🟩 Connecter l'API Travel Advisor à l'application
+- ✅ Connecter l'API Travel Advisor à l'application
 - 🟩 Connecter l'API Open-Meteo à l'application
 - 🟩 Afficher les voyages via l'API Travel Advisor
 - 🟩 Afficher les conditions météo en temps réel pour les destinations choisies (API Open-Meteo)
@@ -31,11 +31,11 @@
 "Travel Manager"                         USER: "Bonjour `John`"
 
 "Voici les voyages disponibles :" // (afficher un tableau de 15 voyages + lier un raccourci de choix)
-"(1). Voyage 1"     "(6). Voyage 1"      "(11). Voyage 1"
-"(2). Voyage 2"     "(7). Voyage 2"      "(12). Voyage 2"
-"(3). Voyage 3"     "(8). Voyage 3"      "(13). Voyage 3"
-"(4). Voyage 4"     "(9). Voyage 4"      "(14). Voyage 4"
-"(5). Voyage 5"     "(10). Voyage 5"     "(15). Voyage 5"
+"(1). Destination 1"     "(6). Destination 6"       "(11). Destination 11"
+"(2). Destination 2"     "(7). Destination 7"       "(12). Destination 12"
+"(3). Destination 3"     "(8). Destination 8"       "(13). Destination 13"
+"(4). Destination 4"     "(9). Destination 9"       "(14). Destination 14"
+"(5). Destination 5"     "(10). Destination 10"     "(15). Destination 15"
 
 "(R) pour rechercher une destination - (<- pour précédent) - (-> pour suivant)"
 ```
