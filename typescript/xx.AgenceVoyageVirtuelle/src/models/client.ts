@@ -1,3 +1,6 @@
+// Représente un client avec les informations de base
+
+
 import { IClient } from "../interfaces/IClient";
 
 export class Client implements IClient {
