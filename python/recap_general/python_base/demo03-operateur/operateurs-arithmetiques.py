@@ -25,3 +25,5 @@ resultat = a ** b # 125
 
 # => Modulo (reste de la division entière)
 resultat = a % b # 2
+
+
