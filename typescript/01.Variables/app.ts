@@ -27,4 +27,31 @@ let monLitteral: "un" | "deux" | "trois"
 monLitteral = "trois"
 console.log(`monLitteral ${monLitteral}`)
 
+let maConst: "jean" | "toto" = "toto"
 
+maConst = "toto"
+
+
+type maType = "jean" | "toto"
+
+
+// déclaration d'une variable 
+
+
+// créer une fonction qui prend un type en paramètre
+function maFonction(maVariable: number )  {
+    console.log("maVariable : " + maVariable)
+}
+
+maFonction(2)
+    
+
+function maSuperFonction( unParams: number ) {
+    console.log("unParms :" + unParams)
+}
+
+maSuperFonction(0)
+
+function toto( unParms: "toto" | "tata") {
+    console.log("unParms :" + unParms)
+}
