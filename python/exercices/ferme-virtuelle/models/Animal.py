@@ -1,11 +1,11 @@
 
 
-from EntiteFerme import EntiteFerme
+from .EntiteFerme import EntiteFerme
 
 class Animal(EntiteFerme):
     """classe dérivée qui représente un animal dans la ferme"""
-    def __init__(self, nom, prix_achat, prix_vente, temps_croissance):
-        super().__init__(nom, "Animal", prix_achat, prix_vente, temps_croissance)
+    def __init__(self, nom, prix_achat, temps_croissance):
+        super().__init__(nom, "Animal", prix_achat, temps_croissance)
         self.est_placer = False
 
     def placer(self):

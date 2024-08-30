@@ -1,20 +1,25 @@
 
 
-from models import EntiteFerme
+from models.EntiteFerme import EntiteFerme
 
 
 class Player:
     def __init__(self, pseudo):
         self.pseudo = pseudo
         self.argent = 5000
+        self.inventaire = []
+        # Skills
+        self.experience = 0.0
+        self.level = 1
+
         self.parcelles_achetees = []
-        self.objets_achetes = []
         self.recolte_produits = []
+
 
     def acheter(self, objet):
         if self.argent >= objet.prix_achat:
             self.argent -= objet.prix_achat
-            self.objets_achetes.append(objet)
+            self.inventaire.append(objet)
 
             if isinstance(objet, EntiteFerme):
                 if objet.type_entite == "Plante":
