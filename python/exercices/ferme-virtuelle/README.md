@@ -11,6 +11,7 @@
 ## Objectifs :
 
 1.  **Classes Principales :**
+
     **_Ferme :_**
 
     - Réprésente la ferme du joueur
@@ -30,6 +31,7 @@
     - Permet au joueur d'acheter des graines, des animaux ou de vendre des produits de la ferme pour générer des revenus.
 
 2.  **Fonctionnalité de base :**
+
     **_Planter des cultures :_**
 
     - Le joueur doit pouvoir `acheter des graines`, `planter des graines`, `arroser des cultures`, `détruire des cultures`, `suivre la croissance de la culture jusqu'à la récolte`.
@@ -48,6 +50,7 @@
     - Ferme : Représente la ferme du joueur.
 
 3.  **Fonctionnalité avancée :**
+
     **_Gestion des saisons :_**
 
     - implémenter un système de saisons `affecte la dispo des cultures`, `affecte le comportement des animaux`
